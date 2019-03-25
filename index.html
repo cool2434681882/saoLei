@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/library.js"></script>
+    <style>
+    html,body{
+        margin: 0 auto;
+        padding: 0;
+        width: 320px;
+    }
+    h1{
+        text-align: center;
+    }
+    input,button{
+        display: block;
+        margin: 10px auto;
+    }
+    #mine_num{
+        padding-top: 10px; 
+        text-align: center;
+    }
+    #mine_num span{
+        font-size: 20px;
+        color: red;
+    }
+    #map{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #111;
+        width: 300px;
+
+        margin: 10px auto;
+        border: 2px solid red;
+    }
+    .ceils{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        color:red;
+        /* font-size: 12px; */
+        /* line-height: 30px; */
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    .show{
+        background-color: #ddd;
+    }
+    .die{
+        background-color: red;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>扫雷</h1>
+    <input class="first" type="text" placeholder="请输入行数" id="col">
+    <input type="text" placeholder="请输入列数 注:&lt;20" id="rol">
+    <input type="text" placeholder="请输如雷数" id="mine">
+    <button id="state">开始游戏</button>
+    <button id="end"> 完成任务 </button>
+    <div id="map"></div>
+    <div id="mine_num">共有 <span id="mine_num_span">x</span> 个雷</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
